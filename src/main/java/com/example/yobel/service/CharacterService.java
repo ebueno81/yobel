@@ -32,8 +32,13 @@ public class CharacterService {
     }
 
 
+<<<<<<< HEAD
     public List<Characters> getCharactersByFilter(String name) {
         String url = API_URL + "?name=" + name; // Construye la URL con los filtros
+=======
+    public List<Characters> getCharactersByFilter(String name, String status) {
+        String url = API_URL + "?name=" + name + "&status=" + status; // Construye la URL con los filtros
+>>>>>>> 4aba9588c989a0a543eb600a021d1e78bff68b70
         ApiResponse response = restTemplate.getForObject(url, ApiResponse.class);
         return response != null ? response.getResults() : List.of();
     }
