@@ -27,5 +27,6 @@ public class Characters {
     private String gender;
     private String image;
 
+
 }
 

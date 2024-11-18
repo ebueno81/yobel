@@ -6,6 +6,7 @@ import java.util.List;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class ApiResponse {
+
     private List<Characters> results;
 
     public List<Characters> getResults() {

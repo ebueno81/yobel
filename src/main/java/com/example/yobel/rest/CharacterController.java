@@ -14,7 +14,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/characters")
-@CrossOrigin(origins = "http://localhost:4200") // Permite solicitudes desde este origen
+@CrossOrigin(origins = "http://localhost:4200") // Permite solicitudes desde este origen especialmente para angular
 public class CharacterController {
 
     @Autowired
